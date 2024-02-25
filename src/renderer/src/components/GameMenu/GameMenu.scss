@@ -1,0 +1,44 @@
+.game-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.game-menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.game-menu .game-menu__title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.game-menu__item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-menu__item:hover {
+  color: #4eb8d8;
+  text-shadow: 0 0 5px #4eb8d8;
+}

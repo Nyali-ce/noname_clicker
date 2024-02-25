@@ -50,7 +50,9 @@ app.whenReady().then(() => {
   })
 
   // IPC test
-  ipcMain.on('baka', () => console.log('baka'))
+  ipcMain.on('exit', () => {
+    app.quit()
+  })
 
   createWindow()
 
